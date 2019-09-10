@@ -1,0 +1,407 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+#wrap {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wrap img {
+  vertical-align: bottom;
+}
+
+#wrap .main {
+  width: 100%;
+}
+
+/* --------------------
+    MAIN
+-------------------- */
+.main .bgTop {
+  /* ---
+            BG TOP
+        --------------- */
+  z-index: -1;
+  height: 100%;
+  background-image: url("../images/pc/fv-2000-x-580.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.main .bgTop .logo {
+  /* ----- MOMO LOGO ----- */
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main .bgTop .logo {
+    position: relative;
+    display: block;
+    margin: auto;
+    max-width: 1220px;
+    width: 100%;
+  }
+  .main .bgTop .logo a {
+    position: absolute;
+    top: 10px;
+    width: 173px;
+    height: 20px;
+    background-image: url("../images/pc/momo-logo-1.png");
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .main .bgTop .logo a:hover {
+    background-image: url("../images/pc/momo-logo-2.png");
+  }
+}
+
+.main .bgTop .header {
+  /* ----- HEADER ----- */
+  margin: auto;
+  max-width: 1220px;
+  width: 100%;
+}
+
+.main .bgDwon {
+  /* ---
+            BG DOWN
+        --------------- */
+  z-index: -1;
+  height: 100%;
+  background-color: #f9e4e6;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .main .bgDwon {
+    background-attachment: fixed;
+    background-image: url("../images/pc/background.png");
+  }
+}
+
+.main .bgDwon .content {
+  /* ----- CONTENT ----- */
+  margin: auto;
+  padding-bottom: 10px;
+  max-width: 1220px;
+  width: 100%;
+}
+
+.main .bgDwon .content .offerPickup {
+  /* OFFER PICKPUP */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 10px;
+  padding: 60px 10px 10px;
+  height: 100%;
+  background-image: url("../images/sp/exclusive.png");
+  background-position: center top;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .main .bgDwon .content .offerPickup {
+    margin: unset;
+    padding: 120px 10px 10px;
+    background-image: url("../images/pc/exclusive.png");
+  }
+}
+
+.main .bgDwon .content .offerPickup a {
+  display: block;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .main .bgDwon .content .offerPickup a {
+    width: 33.33%;
+  }
+}
+
+.main .bgDwon .content .offerPickup a img {
+  -webkit-box-shadow: 1.5px 1.3px 9.6px 0.4px rgba(114, 114, 114, 0.54);
+          box-shadow: 1.5px 1.3px 9.6px 0.4px rgba(114, 114, 114, 0.54);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (min-width: 768px) {
+  .main .bgDwon .content .offerPickup a img {
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+  }
+  .main .bgDwon .content .offerPickup a img:hover {
+    -webkit-box-shadow: 1.5px 1.3px 9.6px 0.4px rgba(114, 114, 114, 0.54);
+            box-shadow: 1.5px 1.3px 9.6px 0.4px rgba(114, 114, 114, 0.54);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+.main .bgDwon .content .offer {
+  /* OFFER OFFER */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 30% 5px 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .bgDwon .content .offer:nth-child(3) {
+  /* 女大早安組 */
+  background-image: url("../images/sp/goodmorning.png");
+}
+
+.main .bgDwon .content .offer:nth-child(3) h3 {
+  background: #73d1db;
+}
+
+.main .bgDwon .content .offer:nth-child(4) {
+  /* 女大美白組 */
+  background-image: url("../images/sp/whitening.png");
+}
+
+.main .bgDwon .content .offer:nth-child(4) h3 {
+  background: #448aca;
+}
+
+.main .bgDwon .content .offer:nth-child(5) {
+  /* 女大EGF精華組 */
+  background-image: url("../images/sp/egf.png");
+}
+
+.main .bgDwon .content .offer:nth-child(5) h3 {
+  background: #e87893;
+}
+
+@media (min-width: 768px) and (max-width: 1220px) {
+  .main .bgDwon .content .offer:nth-child(3) {
+    /* 女大早安組 */
+    background-color: #d5f1ef;
+  }
+  .main .bgDwon .content .offer:nth-child(4) {
+    /* 女大美白組 */
+    background-color: #d8ebff;
+  }
+  .main .bgDwon .content .offer:nth-child(5) {
+    /* 女大EGF精華組 */
+    background-color: #ffdfc1;
+  }
+}
+
+@media (min-width: 768px) {
+  .main .bgDwon .content .offer {
+    padding: 40px 10px 20px;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .main .bgDwon .content .offer:nth-child(3) {
+    /* 女大早安組 */
+    background-image: url("../images/pc/goodmorning.png");
+  }
+  .main .bgDwon .content .offer:nth-child(4) {
+    /* 女大美白組 */
+    background-image: url("../images/pc/whitening.png");
+  }
+  .main .bgDwon .content .offer:nth-child(5) {
+    /* 女大EGF精華組 */
+    background-image: url("../images/pc/egf.png");
+  }
+}
+
+.main .bgDwon .content .offer h3 {
+  color: #FFF;
+  text-align: center;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.main .bgDwon .content .offer h4 {
+  overflow: hidden;
+  padding-top: 5px;
+  height: 30px;
+  background-color: #fff;
+  color: #000000;
+  text-align: center;
+  font-weight: normal;
+  font-size: 90%;
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .main .bgDwon .content .offer h4 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main .bgDwon .content .offer h4 {
+    font-size: 50%;
+  }
+}
+
+.main .bgDwon .content .offer a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .main .bgDwon .content .offer a {
+    width: 25%;
+  }
+}
+
+.main .bgDwon .content .offer a:nth-child(1), .main .bgDwon .content .offer a:nth-child(2) {
+  background-color: unset;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.main .bgDwon .content .offer a .box {
+  display: block;
+  height: 100%;
+  background: #fff;
+  -webkit-box-shadow: 1.5px 1.3px 9.6px 0.4px rgba(114, 114, 114, 0.54);
+          box-shadow: 1.5px 1.3px 9.6px 0.4px rgba(114, 114, 114, 0.54);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (min-width: 768px) {
+  .main .bgDwon .content .offer a .box {
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+  }
+  .main .bgDwon .content .offer a .box:hover {
+    -webkit-box-shadow: 1.5px 1.3px 9.6px 0.4px rgba(114, 114, 114, 0.54);
+            box-shadow: 1.5px 1.3px 9.6px 0.4px rgba(114, 114, 114, 0.54);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  .main .bgDwon .content .offer a .box:hover h4 {
+    color: #d7216d;
+  }
+}
+
+.main .bgDwon .content .offer a .box img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.main .bgDwon .content .offer a .box p {
+  padding-bottom: 5px;
+  background-color: #fff;
+  color: #d92670;
+  text-align: center;
+  font-weight: 500;
+}
+
+.main .bgDwon .content .offer a .box p del {
+  /* DEL */
+  padding-right: 2px;
+  color: #5e5e5e;
+  font-weight: normal;
+  font-size: 85%;
+}
+
+@media (min-width: 768px) {
+  .main .bgDwon .content .offer a .box p del {
+    padding-right: 5px;
+    font-size: 100%;
+  }
+}
+
+.main .bgDwon .content .offer a .box p .money {
+  /* MONET */
+  font-size: 85%;
+}
+
+@media (min-width: 768px) {
+  .main .bgDwon .content .offer a .box p .money {
+    font-size: 100%;
+  }
+}
+
+.main .bgDwon .content .offer a .box p .price {
+  /* PRICE */
+  font-size: 180%;
+}
+
+@media (min-width: 768px) {
+  .main .bgDwon .content .offer a .box p .price {
+    font-size: 260%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

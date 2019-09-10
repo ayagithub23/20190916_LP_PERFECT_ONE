@@ -1,0 +1,293 @@
+/* --------------------
+    MAIN
+-------------------- */
+.main {
+    .bgTop {
+        /* ---
+            BG TOP
+        --------------- */
+        // pointer-events: none;
+        z-index: -1;
+        height: 100%;
+        background-image: url('../images/pc/fv-2000-x-580.png');
+        background-position: center top;
+        background-repeat: no-repeat;
+        // MOMO LOGO
+        .logo {
+            /* ----- MOMO LOGO ----- */
+            display: none;
+            // PC
+            @media (min-width: 768px) {
+                position: relative;
+                display: block;
+                margin: auto;
+                max-width: 1220px;
+                width: 100%;
+                // A
+                a {
+                    position: absolute;
+                    top: 10px;
+                    width: 173px;
+                    height: 20px;
+                    background-image: url('../images/pc/momo-logo-1.png');
+                    transition: .3s;
+                    &:hover {
+                        background-image: url('../images/pc/momo-logo-2.png');
+                    }
+                }
+            }
+        }
+        .header {
+            /* ----- HEADER ----- */
+            margin: auto;
+            max-width: 1220px;
+            width: 100%;
+        }
+    }
+
+    .bgDwon {
+        /* ---
+            BG DOWN
+        --------------- */
+        z-index: -1;
+        height: 100%;
+        background-color: #f9e4e6;
+        background-position: center top;
+        background-repeat: no-repeat;
+        // PC
+        @media (min-width: 768px) {
+            background-attachment: fixed;
+            background-image: url('../images/pc/background.png');
+        }
+        .content {
+            /* ----- CONTENT ----- */ 
+            margin: auto;
+            padding-bottom: 10px;
+            max-width: 1220px;
+            width: 100%;
+            // OFFER PICKPUP
+            .offerPickup {
+                /* OFFER PICKPUP */ 
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 10px;
+                padding: 60px 10px 10px;
+                height: 100%;
+                background-image: url('../images/sp/exclusive.png');
+                background-position: center top;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                // PC
+                @media (min-width: 768px) {
+                    margin: unset;
+                    padding: 120px 10px 10px;
+                    background-image: url('../images/pc/exclusive.png');
+                }
+                // A
+                a {
+                    display: block;
+                    display: block;
+                    box-sizing: border-box;
+                    padding: 5px;
+                    width: 50%;
+                    // PC
+                    @media (min-width: 768px) {
+                        width: 33.33%;
+                    }
+                    img {
+                        box-shadow: 1.5px 1.3px 9.6px 0.4px rgba(114, 114, 114, 0.54);
+                        transition: .3s;
+                        // PC
+                        @media (min-width: 768px) {
+                            box-shadow: unset;
+                            &:hover {
+                                box-shadow: 1.5px 1.3px 9.6px 0.4px rgba(114, 114, 114, 0.54);
+                                transform: translateY(-5px);
+                            }
+                        }
+                    }
+                }
+            }
+            // OFFER
+            .offer {
+                /* OFFER OFFER */ 
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                padding: 30% 5px 10px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                // 女大早安組
+                &:nth-child(3) {
+                    /* 女大早安組 */ 
+                    background-image: url('../images/sp/goodmorning.png');
+                    h3 {
+                        background: #73d1db;
+                    }
+                }
+                // 女大美白組
+                &:nth-child(4) {
+                    /* 女大美白組 */ 
+                    background-image: url('../images/sp/whitening.png');
+                    h3 {
+                        background: #448aca;
+                    }
+                }
+                // 女大EGF精華組
+                &:nth-child(5) {
+                    /* 女大EGF精華組 */
+                    background-image: url('../images/sp/egf.png');
+                    h3 {
+                        background: #e87893;
+                    }
+                }
+                // PC
+                @media (min-width: 768px) and (max-width: 1220px) {
+                    // 女大早安組
+                    &:nth-child(3) {
+                        /* 女大早安組 */ 
+                        background-color: #d5f1ef;
+                    }
+                    // 女大美白組
+                    &:nth-child(4) {
+                        /* 女大美白組 */ 
+                        background-color: #d8ebff;
+                    }
+                    // 女大EGF精華組
+                    &:nth-child(5) {
+                        /* 女大EGF精華組 */ 
+                        background-color: #ffdfc1;
+                    }
+                }
+                // PC
+                @media (min-width: 768px) {
+                    padding: 40px 10px 20px;
+                    height: 100%;
+                    background-size: 100% auto;
+                    background-repeat: no-repeat;
+                    // 女大早安組
+                    &:nth-child(3) {
+                        /* 女大早安組 */ 
+                        background-image: url('../images/pc/goodmorning.png');
+                    }
+                    // 女大美白組
+                    &:nth-child(4) {
+                        /* 女大美白組 */ 
+                        background-image: url('../images/pc/whitening.png');
+                    }
+                    // 女大EGF精華組
+                    &:nth-child(5) {
+                        /* 女大EGF精華組 */ 
+                        background-image: url('../images/pc/egf.png');
+                    }
+                }
+                // H3
+                h3 {
+                    color: #FFF;
+                    text-align: center;
+                    font-weight: 500;
+                    line-height: 2;
+                }
+                // H4
+                h4 {
+                    overflow: hidden;
+                    padding-top: 5px;
+                    height: 30px;
+                    background-color: #fff;
+                    color: #000000;
+                    text-align: center;
+                    font-weight: normal;
+                    font-size: 90%;
+                    line-height: 2;
+                    // PC
+                    @media (min-width: 768px) {
+                        font-size: 15px;
+                    }
+                    // SP MAX-WIDTH 320
+                    @media (max-width: 320px) {
+                        font-size: 50%;
+                    }
+                }
+                // A
+                a {
+                    box-sizing: border-box;
+                    padding: 5px;
+                    width: 50%;
+                    // PC
+                    @media (min-width: 768px) {
+                        width: 25%;
+                    }
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        background-color: unset;
+                        opacity: 0;
+                        pointer-events: none;
+                    }
+                    // BOX
+                    .box {
+                        display: block;
+                        height: 100%;
+                        background: #fff;
+                        box-shadow: 1.5px 1.3px 9.6px 0.4px rgba(114, 114, 114, 0.54);
+                        transition: .3s;
+                        // PC
+                        @media (min-width: 768px) {
+                            box-shadow: unset;
+                            &:hover {
+                                box-shadow: 1.5px 1.3px 9.6px 0.4px rgba(114, 114, 114, 0.54);
+                                transform: translateY(-5px);
+                                h4 {
+                                    color: #d7216d;
+                                }
+                            }
+                        }
+                        img {
+                            display: block;
+                            box-sizing: border-box;
+                            padding: 10px;
+                            background-color: #fff;
+                        }
+                        p {
+                            padding-bottom: 5px;
+                            background-color: #fff;
+                            color: #d92670;
+                            text-align: center;
+                            font-weight: 500;
+                            // DEL
+                            del {
+                                /* DEL */ 
+                                padding-right: 2px;
+                                color: #5e5e5e;
+                                font-weight: normal;
+                                font-size: 85%;
+                                // PC
+                                @media (min-width: 768px) {
+                                    padding-right: 5px;
+                                    font-size: 100%;
+                                }
+                            }
+                            // MONEY
+                            .money {
+                                /* MONET */ 
+                                font-size: 85%;
+                                // PC
+                                @media (min-width: 768px) {
+                                    font-size: 100%;
+                                }
+                            }
+                            // PRICE
+                            .price {
+                                /* PRICE */ 
+                                font-size: 180%;
+                                // PC
+                                @media (min-width: 768px) {
+                                    font-size: 260%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
