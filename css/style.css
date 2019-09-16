@@ -208,7 +208,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 20px;
-  padding: 30% 5px 10px;
+  padding: 40% 5px 10px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -403,5 +403,33 @@ img {
   .main .bgDwon .content .offer a .box p .price {
     font-size: 260%;
   }
+}
+
+.main .bgDwon .content .footer {
+  margin: 50px 10px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1.8px;
+  font-weight: 500;
+  line-height: 1.67;
+  opacity: .6;
+}
+
+@media (min-width: 768px) {
+  .main .bgDwon .content .footer {
+    margin: 50px auto;
+  }
+}
+
+.main .bgDwon .content .footer p {
+  font-size: 20px;
+}
+
+.main .bgDwon .content .footer li {
+  display: list-item;
+  margin-left: 20px;
+  list-style-type: disc;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */

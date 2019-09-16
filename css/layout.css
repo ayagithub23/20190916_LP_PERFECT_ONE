@@ -1,0 +1,144 @@
+.WRAPPER {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.fixed_Area {
+	position: fixed;
+	top: 100px;
+	right: 0px;
+	z-index: 999;
+	width: 100px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 48px;
+	transition: all 0.2s ease;
+	transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
+	transform-origin: top right;
+}
+
+.fixed_Area a {
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+
+.fixed_Area img {
+	transition: all 0.4s ease;
+}
+
+.fixed_Area .box ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.fixed_Area .box li {
+	float: inherit;
+	margin: 0 0 1px 0;
+	padding: 0;
+	width: 100px;
+	height: 48px;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.fixed_Area .box li a {
+	overflow: hidden;
+	height: 48px;
+	letter-spacing: -1px;
+}
+
+.fixed_Area .box li a:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.fixed_Area .box li.cate-hover {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.fixed_Area .box h2 {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.fixed_Area h3 {
+	position: absolute;
+	top: 100px;
+	right: -50px;
+	margin: 0;
+	padding: 35px 0 0 0;
+	width: 48px;
+	height: 82px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.6);
+	text-align: left;
+	font-size: 16px;
+	line-height: 30px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	transform-origin: top left;
+
+	writing-mode: vertical-lr;
+}
+
+.fixed_Area h3 i {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.fixed_Area h3 i:before {
+	position: absolute;
+	top: 41%;
+	left: 37%;
+	display: block;
+	width: 15%;
+	height: 15%;
+	border: 1px solid #000;
+	border-width: 0 1px 1px 0;
+	content: "";
+	transition: all 0.3s ease;
+	transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.fixed_Area.fixed_Area-dark a {
+	color: #000;
+}
+
+.fixed_Area.fixed_Area-dark .box li {
+	background-color: rgba(249, 245, 246, 0.69);
+}
+
+.fixed_Area.fixed_Area-dark .box li a:hover {
+	background-color: rgba(233, 120, 148, 0.62);
+}
+
+.fixed_Area.fixed_Area-dark .box li.cate-hover {
+	background-color: rgba(233, 120, 148, 0.62);
+}
+
+.fixed_Area.fixed_Area-dark h3 {
+	background-color: rgba(233, 120, 148, 0.6);
+	color: #fff;
+}
+
+.fixed_Area.fixed_Area-dark h3 i:before {
+	border-color: #fff;
+}
+
+.fixed_Area.fixed_Area_hide {
+	transform: rotate3d(0, 0, 0, 0deg) translate3d(150px, 0, 0);
+}
+
+.fixed_Area.fixed_Area_hide h3 {
+	transition-delay: 0.2s;
+	transform: rotate3d(0, 0, 0, 0deg) translate3d(-185px, 0, 0);
+}
